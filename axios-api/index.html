@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios@0.21.4/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Axios API without Framework</title>
+</head>
+<body>
+    <main>
+        <div class="userCard">
+            <img id="userAvatar" src="https://via.placeholder.com/190x200"/>
+            <div class="description">
+                <ul class="id">
+                    <span>ID:</span>
+                    <il id="userId">0</il>
+                </ul>
+                <ul class="name">
+                    <span>Nome:</span>
+                    <il id="userName">--------</il>
+                </ul>
+                <ul class="city">
+                    <span>Cidade:</span>
+                    <il id="userCity">--------</il>
+                </ul>
+            </div>
+        </div>
+        <div class="actions">
+            <span>CRUD Actions over Axios</span>
+            <button id="btnGetUsers">Get all Users</button>
+            <hr size="5" width="100%" color="gray">
+            <div class="btnCrud">
+                <button id="addNewUser">Create</button>
+                <button id="btnGetUserbyID">Read</button>
+                <button id="updateUser">Update</button>
+                <button id="deleteUser">Delete</button>
+            </div>
+        </div>
+    </main>
+    <div class="JSON">
+        <label for="textJSON">Resposta JSON</label>
+        <textarea name="textJSON" id="textJSON" cols="80" rows="8"></textarea>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
